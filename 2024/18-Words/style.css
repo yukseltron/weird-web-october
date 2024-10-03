@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    user-select: none;
+}
+
+main {
+    margin: 2vh;
+    font-size : clamp(2rem, 10vw, 5rem);
+    font-style: italic;
+}

@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    user-select: none;
+}
+
+main {
+    width: 50%;
+    margin: 0 auto;
+    font-size : 2rem;
+}
+
+h1 {
+    font-weight: 400;
+    text-align: center;
+    margin: 50px 0px;
+    font-style: italic;
+    font-size: 1rem;
+    padding: 50px;
+}
+
+a {
+    text-decoration: overline;
+}
+a:visited {
+    color: blue;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+#title {
+    background-size: contain;
+    background-repeat: no-repeat;
+}

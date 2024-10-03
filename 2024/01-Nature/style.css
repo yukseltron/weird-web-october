@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    background-color: green;
+    color: white;
+}
+
+body {
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    user-select: none;
+}
+
+main {
+    width: 100%;
+    margin: 0 auto;
+    font-size : 2rem;
+}
+
+h1 {
+    font-weight: 400;
+    text-align: center;
+    font-style: italic;
+    font-size: 1rem;
+    line-height: 30vh;
+    padding: 50px;
+}
+h2 {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: overline;
+}
+a:visited {
+    color: blue;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+pre {
+    font-size: 1rem;
+    text-align: center;
+    transition: display 0.5s;
+}
+pre:hover {
+    color: lime;
+}
+
+hr {
+    margin-bottom: 50px;
+    border: 1px solid white;
+}
+
+#card {
+    display: none;
+    border: 2px solid white;
+    width: fit-content;
+    padding: 10px;
+    position: absolute;
+}
+
+#upper-jaw, #bottom-jaw {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.upper-tooth {
+    width: 0; 
+    height: 0; 
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 30vh solid white;
+}
+
+.bottom-tooth {
+    width: 0; 
+    height: 0; 
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 30vh solid white;
+}
+
+.background {
+    display: none;
+}

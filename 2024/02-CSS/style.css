@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    color: white;
+}
+
+body {
+    background-color: orangered;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    user-select: none;
+    margin-bottom: 200px;;
+}
+
+section {
+    width: 50%;
+    margin: 0 auto;
+    font-size : 2rem;
+}
+
+h1 {
+    font-weight: 400;
+    text-align: center;
+    font-style: italic;
+    padding: 50px;
+}
+h2 {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: overline;
+}
+a:visited {
+    color: blue;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+pre {
+    font-size: 0.5rem;
+    text-align: center;
+}
+
+hr {
+    margin-bottom: 50px;
+}
+
+button {
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    padding: 50px;
+    margin: 25px;
+    transition: all 0.5s;
+}
+.box p {
+    font-size: 1rem;
+    visibility: hidden;
+}
+.box:hover p {
+    visibility: visible;
+}
+
+#box-1:hover {
+    background-color: green;
+    border-radius: 50%;
+}
+#box-2:hover {
+    background-color: blue;
+    border-radius: 50%;
+}
+#box-3:hover {
+    background-image: url('https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExNmE5MjdndWdmeGxuMzBmdW1hOG1nNGJ2ZDU0bTIwZG1iZWI3NHNidiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/uTMa2bFWqDSHvstLbx/giphy.webp');
+    border-radius: 50%;
+}
+
+.card {
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: rotate(-45deg);
+    background-color: yellow;
+    color: yellow;
+    transition: all 0.5s;
+    padding: 10px;
+}
+.card:hover {
+    color: blue;
+    transform: rotate(0deg);
+    transition: all 0.5s;
+}
+
+.card-box {
+    display: flex;
+    margin-bottom: 25px;
+    transition: all 0.5s;
+    gap: 20px;
+}
+.card-box p {
+    transform: scale(1, -1);
+}
+.card-box:hover {
+    flex-direction: row-reverse;
+    gap: 0px;
+    transition: all 0.5s;
+}
+.card-box:hover p {
+    transform: scale(1, 1);
+    transition: all 0.5s;
+}
+.card-box div {
+    border: 2px solid white;
+    width: 300px;
+    height: 100px;
+}
