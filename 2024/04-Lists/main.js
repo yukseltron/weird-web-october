@@ -87,17 +87,17 @@ const data = {
     "shelf-romance": [
         {
             "title": "Sliding Doors",
-            "url": "https://en.wikipedia.org/wiki/View_from_the_Top",
+            "url": "https://en.wikipedia.org/wiki/Sliding_Doors",
             "year": 1998
         },
         {
-            "title": "There's Something About Mary",
-            "url": "https://en.wikipedia.org/wiki/Alien_(film)",
-            "year": 1998
+            "title": "Reality Bites",
+            "url": "https://en.wikipedia.org/wiki/Reality_Bites",
+            "year": 1994
         },
         {
             "title": "Hitch",
-            "url": "https://en.wikipedia.org/wiki/Tremors_(1990_film)",
+            "url": "https://en.wikipedia.org/wiki/Hitch_(film)",
             "year": 2005
         },
         {
@@ -140,9 +140,9 @@ const data = {
     ],
     "shelf-comedy": [
         {
-            "title": "Galaxy Quest",
-            "url": "https://en.wikipedia.org/wiki/The_Thing_(1982_film)",
-            "year": 1999
+            "title": "Friday",
+            "url": "https://en.wikipedia.org/wiki/Friday_(1995_film)",
+            "year": 1995
         },
         {
             "title": "Go",
