@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    color: white;
+}
+
+body {
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    user-select: none;
+    overflow: hidden;
+}
+
+main {
+    background-color: transparent;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    user-select: none;
+    margin-bottom: 200px;
+}
+
+main div {
+    transition: all 0.5s;
+}
+
+section {
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    pointer-events: none;
+}
+
+p {
+    mix-blend-mode: overlay;
+}

@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    color: orange;
+}
+
+body {
+    background-color: blue;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    user-select: none;
+    margin-bottom: 200px;;
+}
+
+main {
+    font-size: 6rem;
+    width: 50%;
+    margin: 0 auto;
+}
+
+pre {
+    font-size: 1rem;
+    text-align: center;
+}
+
+p {
+    font-size: 1rem;
+}
+
+hr {
+    border: 1px solid orange;
+}
+
+h1 {
+    font-size: 1.25rem;
+    font-weight: 400;
+    font-style: italic;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+header a {
+    color: white;
+}
+
+.sign {
+    margin: 50px 0px;
+}
+
+.sign p {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.shelf {
+    width: 400px;
+    height: 100px;
+    border: 1px solid orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0px;
+}
+
+.catalogue {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 75px;
+}
+
+.catalogue a:hover {
+    background-color: orange;
+    color: blue;
+}
+
+.card {
+    width: 600px;
+    height: 400px;
+    padding: 50px;
+    background-color: blue;
+    border: 1px solid orange;
+    display: none;
+    flex-direction: row;
+    position: absolute;
+    gap: 25px;
+    top: 50%;
+    overflow: scroll;
+}
+
+.film {
+    min-width: 200px;
+    height: 300px;
+    border: 1px solid orange;
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-style: italic;
+    color: orange;
+    text-decoration: none;
+    font-size: 1rem;
+    box-shadow: -10px 10px 0px 0px white;
+}
+.film:hover {
+    background-color: orange;
+    color: blue;
+}
+
+
+.film h2 {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.img-store {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin: 50px;
+    filter:saturate(300%);
+}
+
+#shelf-horror {
+    transform: rotate(-23deg);
+}
+#shelf-thriller {
+    transform: rotate(-23deg);
+}
+#shelf-action {
+    transform: rotate(-23deg);
+}
+#shelf-disaster {
+    transform: rotate(23deg);
+}
+#shelf-romance {
+    transform: rotate(23deg);
+}
+#shelf-comedy {
+    transform: rotate(23deg);
+}
+
+#list-creature-features { 
+    width: 40vw;
+    height: 50vh;
+    border: 2px solid black;
+    overflow: scroll;
+}
+
+#sign-2 {
+    display: none;
+}

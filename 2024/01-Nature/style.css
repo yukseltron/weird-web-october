@@ -19,7 +19,7 @@ body {
 }
 
 main {
-    width: 100%;
+    width: 70%;
     margin: 0 auto;
     font-size : 2rem;
 }
@@ -28,27 +28,31 @@ h1 {
     font-weight: 400;
     text-align: center;
     font-style: italic;
-    font-size: 1rem;
+    font-size: 2rem;
     line-height: 30vh;
     padding: 50px;
 }
 h2 {
-    font-size: 1rem;
+    font-size: 2rem;
     font-weight: 400;
 }
 
 a {
     text-decoration: overline;
 }
-a:visited {
-    color: blue;
-}
 a:hover {
     text-decoration: underline;
 }
 
-pre {
+p {
     font-size: 1rem;
+    width: 50%;
+    margin: auto;
+    padding: 20px 0px;
+}
+
+pre {
+    font-size: 0.75rem;
     text-align: center;
     transition: display 0.5s;
 }
@@ -59,6 +63,30 @@ pre:hover {
 hr {
     margin-bottom: 50px;
     border: 1px solid white;
+}
+
+li {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+ul {
+    width: fit-content;
+    max-width: 40vw;
+    margin: auto;
+    visibility: hidden;
+    position: absolute;
+    background-color: white;
+    outline: 2px solid white;
+    outline-offset: 2px;
+    color: green;
+    list-style: none;
+    padding: 15px;
+    transition: all 0.5s;
+}
+
+header a {
+    color: white;
 }
 
 #card {
@@ -90,8 +118,4 @@ hr {
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     border-bottom: 30vh solid white;
-}
-
-.background {
-    display: none;
 }

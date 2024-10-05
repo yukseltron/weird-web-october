@@ -4,6 +4,24 @@
     box-sizing: border-box;
 }
 
+@media(prefers-color-scheme: dark) {
+    body {
+        color: white;
+        background-color: black;
+    }
+
+    a {
+        color: cyan;
+    }
+}
+
+@mmedia(prefers-color-scheme: light) {
+    body {
+        color: black;
+        background-color: white;
+    }
+}
+
 body {
     font-family: sans-serif;
     display: flex;
@@ -30,9 +48,6 @@ h1 {
 
 a {
     text-decoration: overline;
-}
-a:visited {
-    color: blue;
 }
 a:hover {
     text-decoration: underline;

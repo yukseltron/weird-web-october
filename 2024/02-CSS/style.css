@@ -38,9 +38,7 @@ h2 {
 
 a {
     text-decoration: overline;
-}
-a:visited {
-    color: blue;
+    color: white;
 }
 a:hover {
     text-decoration: underline;

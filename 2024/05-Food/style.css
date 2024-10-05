@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    user-select: none;
+}
+
+main {
+    font-size: 2rem;
+    width: 50%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: serif;
+    font-style: italic;
+    font-weight: 200;
+    transform: skew(15deg);
+    text-align: center;
+    padding: 25px;
+    outline: 2px dotted red;
+    margin: 50px;
+    color: red;
+}
+
+.pizza-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+
+.toppings {
+    position: absolute;
+    right: 10%;
+    top: 40%;
+}
+
+#pizza {
+    width: 500px;
+    height: 500px;
+    border: 1px solid red;
+    border-radius: 100%;
+}

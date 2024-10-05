@@ -31,9 +31,6 @@ h1 {
 a {
     text-decoration: overline;
 }
-a:visited {
-    color: blue;
-}
 a:hover {
     text-decoration: underline;
 }
@@ -41,4 +38,22 @@ a:hover {
 #title {
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+@media(prefers-color-scheme: dark) {
+    body {
+        color: white;
+        background-color: black;
+    }
+
+    a {
+        color: cyan;
+    }
+}
+
+@mmedia(prefers-color-scheme: light) {
+    body {
+        color: black;
+        background-color: white;
+    }
 }
