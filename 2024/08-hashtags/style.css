@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:black;
+    font-family: sans-serif;
+    user-select: none;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    gap: 4.5px;
+    align-items: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.celestial-object {
+    animation: rotate 10s linear infinite;
+}
+
+.text {
+    color: white;
+    position: absolute;
+    font-size: 2rem;
+    top: 50%;
+    width: 50%;
+    margin: 50px;
+    mix-blend-mode: difference;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

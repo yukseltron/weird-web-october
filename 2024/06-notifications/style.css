@@ -44,8 +44,7 @@ details > summary::-webkit-details-marker {
     width: 800px;
     height: 600px;
     font-size : 2rem;
-    background-color: white;
-    border: 10px solid lightgrey;
+    border: 10px solid white;
     border-radius: 10px;
     display: flex;
     overflow-y: scroll;
@@ -55,7 +54,7 @@ details > summary::-webkit-details-marker {
 .email-sidebar {
     width: 200px;
     height: 100%;
-    background-color: lightgrey;
+    background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -78,12 +77,12 @@ details > summary::-webkit-details-marker {
     height: 50px;
     color: white;
     padding: 5px;
-    border-radius: 100%;
     font-size: 1.5rem;
     font-weight: 400;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 100%;
 }
 
 .email-content {
@@ -97,7 +96,7 @@ details > summary::-webkit-details-marker {
 }
 
 .email {
-    background-color: lightgrey;
+    background-color: white;
     padding: 10px;
     font-size: 1.5rem;
     border-radius: 10px;
