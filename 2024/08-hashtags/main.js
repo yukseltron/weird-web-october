@@ -1,31 +1,48 @@
-function handleMouseover() {
-    const celestialObject = document.querySelector('.celestial-object');
-    const text = document.querySelector('.text');
-    celestialObject.addEventListener('mouseover', () => {
-        celestialObject.style.animationPlayState = 'paused';
-        text.style.visibility = 'visible';
-    });
-}
+function createBoxes() {
+    const main = document.querySelector('main');
+    // Create 100 boxes and add them to the main element and have it wrap around the page
+    for (let i = 0; i < 100; i++) {
+        const box = document.createElement('div');
+        box.classList.add('box');
 
-function handleMouseout() {
-    const celestialObject = document.querySelector('.celestial-object');
-    const text = document.querySelector('.text');
-    celestialObject.addEventListener('mouseout', () => {
-        celestialObject.style.animationPlayState = 'running';
-        text.style.visibility = 'hidden';
-    });
-}
+        // Randomize the size of the box
+        const size = Math.random() * 100 + 50;
+        box.style.width = `${size}px`;
+        box.style.height = `${size}px`;
+        box.style.transform = `rotate(${Math.random() * 360}deg)`;
+        box.textContent = '#' + randomHashtag();
 
-function incrementDistance() {
-    const distance = document.querySelector('#distance');
-    const value = parseInt(distance.textContent) + 1;
-    if (value > 384400)
-        distance.textContent = "384400 km away";
-    else {
-        distance.textContent = value + " km away";
+        box.addEventListener('mouseover', () => {
+            box.style.transform = `rotate(${Math.random() * 360}deg)`;
+        });
+        main.appendChild(box);
     }
 }
 
-setInterval(incrementDistance, 10);
-handleMouseover();
-handleMouseout();
+function randomHashtag() {
+    const hashtags = [
+        "love",
+        "instagood",
+        "photooftheday",
+        "fashion",
+        "beautiful",
+        "happy",
+        "cute",
+        "tbt",
+        "like4like",
+        "followme",
+        "picoftheday",
+        "follow",
+        "me",
+        "selfie",
+        "summer",
+        "art",
+        "instadaily",
+        "friends",
+        "repost",
+        "nature",
+    ];
+    return hashtags[Math.floor(Math.random() * hashtags.length)];
+}
+
+createBoxes();
