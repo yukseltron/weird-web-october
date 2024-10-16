@@ -13,9 +13,30 @@ function createBoxes() {
         box.textContent = '#' + randomHashtag();
 
         box.addEventListener('mouseover', () => {
-            box.style.transform = `rotate(${Math.random() * 360}deg)`;
+            const effect = Math.floor(Math.random() * 5) + 1;
+            randomTextEffects(box, effect);
         });
         main.appendChild(box);
+    }
+}
+
+function randomTextEffects(box, effect) {
+    switch(effect) {
+        case 1:
+            box.style.transform = `rotate(${Math.random() * 360}deg)`;
+            break;
+        case 2:
+            box.style.fontSize = `${Math.random() * 50 + 10}px`;
+            break;
+        case 3:
+            box.style.fontStretch = `${Math.random() * 100}%`;
+            break;
+        case 4:
+            box.style.fontWeight = Math.random() > 0.5 ? 'bold' : 'normal';
+            break;
+        case 5:
+            box.style.letterSpacing = `${Math.random() * 10}px`;
+            break;
     }
 }
 
