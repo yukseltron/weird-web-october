@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:rosybrown;
+    font-family: sans-serif;
+    user-select: none;
+    color: beige;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    gap: 4.5px;
+    align-items: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+main {
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1, h2 {
+    text-align: center;
+    margin: 50px;
+}
+
+p {
+    margin: 0px 10px;
+    line-height: 1.5rem;
+}
+
+h3 {
+    font-style: italic;
+    position: relative;
+    width: 100%;
+    line-height: 400px;
+    vertical-align: middle;
+    text-align: center;
+    margin-bottom: 100px;
+    border: 1px solid indianred;
+    background-size: contain;
+}
+
+h1, h2, h3, p {
+    font-weight: 100;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 25px;
+    border: 2px solid beige;
+    background-color: transparent;
+    color: beige;
+    margin-bottom: 25px;
+}
+button:hover {
+    background-color: beige;
+    color: indianred;
+}
+button:active {
+    transform: scale(0.9);
+}
+
+.circle {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: lightblue;
+    margin: 20px auto;
+    background-image: url('vinyl.png');
+    background-size: contain;
+    background-position: center;
+    animation: spin 0s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.spin-active {
+    animation: spin 2s linear infinite;
+}
+
+audio {
+    display: none;
+}
+
+.record {
+    border: 2px solid beige;
+    border-radius: 25px;
+    padding-left: 200px;
+    padding-right: 15px;
+}
+
+.record-arm {
+    position: absolute;
+    left: 30%;
+    top: 50%;
+    width: 25px;
+    height: 200px;
+    background-color: brown;
+    z-index: 1;
+    transform-origin: top center;
+    transition: all 0.5s;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
