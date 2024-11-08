@@ -53,3 +53,241 @@ h2 {
     width: 400px;
     margin: 50px;
 }
+
+.street {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    width: 100%;
+    margin: 50px;
+}
+
+.building {
+    border-radius: 50px;
+    transform-origin: center;
+    transition: transform 0.5s ease-in-out;
+}
+
+.restaurant {
+    background-color: black;
+    color: pink;
+    letter-spacing: 20px;
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    text-transform: uppercase;
+    outline: 2px solid pink;
+    outline-offset: 10px;
+}
+.restaurant h2 {
+    font-size: 1rem;
+}
+
+.cafe {
+    background-color: darkred;
+    color: white;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: serif;
+}
+
+.bar {
+    background-color: darkgreen;
+    color: gold;
+    width: 120px;
+    height: 100px;
+    border-radius: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+.bar h2 {
+    font-weight: 800;
+}
+
+.outfitter {
+    background-color: white;
+    color: black;
+    width: 200px;
+    height: 100px;
+    border-radius: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+.outfitter h2 {
+    font-weight: 800;
+    font-size: 1rem;
+}
+
+.boutique {
+    background-color: gold;
+    outline: 2px solid white;
+    color: black;
+    width: 200px;
+    height: 100px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.boutique h2 {
+    font-weight: 200;
+    font-size: 1.5rem;
+    font-family: serif;
+}
+
+.tailor {
+    background-color: lightgrey;
+    color: black;
+    width: 200px;
+    height: 75px;
+    border-radius: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    outline: 2px solid black;
+    outline-offset: -10px;
+}
+.tailor h2 {
+    font-weight: 100;
+    font-size: 1.5rem;
+    font-family: serif;
+}
+
+.museum {
+    background-color: beige;
+    color: black;
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    outline: 2px solid black;
+}
+.museum h2 {
+    font-weight: 100;
+    letter-spacing: 5px;
+    font-size: 1.5rem;
+}
+
+.town-hall {
+    height: 150px;
+    width: 150px;
+    background-color: navy;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+}
+.town-hall h2 {
+    background-color: white;
+    color: blue;
+    border-radius: 25px;
+    padding: 15px;
+}
+
+.park {
+    background-color: green;
+    color: beige;
+    width: 200px;
+    height: 100px;
+    border-bottom-right-radius: 0%;
+    border-top-left-radius: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.library {
+    background-color: rgb(2, 2, 54);
+    color: white;
+    width: 200px;
+    height: 100px;
+    border-radius: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.library h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.mall {
+    background-color: lightcoral;
+    color: white;
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mall h2 {
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+    border: 2px solid white;
+    padding: 10px;
+}
+
+.stadium {
+    background-color: grey;
+    color: yellow;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-style: italic;
+    outline: 5px groove yellow;
+    outline-offset: -5px;
+}
+.stadium h2 {
+    font-weight: 800;
+}
+
+.cinema {
+    background-color: black;
+    color: white;
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-right-radius: 0%;
+    border-bottom-left-radius: 0%;
+    border: 10px solid gold;
+}
+
+.hotel {
+    background-color: rgb(245, 245, 154);
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    font-style: italic;
+    outline: 5px dashed red;
+    outline-offset: -5px;
+}
+
+.grocery {
+    background-color: lightgreen;
+    border-radius: 25px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
