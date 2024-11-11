@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:darksalmon;
+    font-family: sans-serif;
+    user-select: none;
+    color: beige;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    gap: 4.5px;
+    align-items: center;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 500px;
+}
+
+h1, h2 {
+    font-weight: 200;
+    margin: 20px;
+}
+h1 {
+    font-size: 4rem;
+}
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    visibility: hidden;
+    position: absolute;
+    background-color: inherit;
+    color: inherit;
+    padding: 25px;
+    letter-spacing: normal;
+    text-transform: none;
+    font-size: 1.5rem !important;
+    font-style: normal;
+    width: fit-content;
+    max-width: 400px;
+}
+
+/* Center cube in the main section */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Cube container */
+  .cube {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    transform-style: preserve-3d;
+    transform: rotateX(0deg) rotateY(0deg);
+    transition: transform 0.5s ease;
+  }
+  
+  /* Each face of the cube */
+  .face {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 100;
+    border: 2px solid white;
+    padding: 15px;
+  }
+  
+  /* Position each face */
+  .front  { transform: translateZ(100px); }
+  .back   { transform: rotateY(180deg) translateZ(100px); }
+  .left   { transform: rotateY(-90deg) translateZ(100px); }
+  .right  { transform: rotateY(90deg) translateZ(100px); }
+  .top    { transform: rotateX(90deg) translateZ(100px); }
+  .bottom { transform: rotateX(-90deg) translateZ(100px); }
+  
+  /* Rotate cube on hover */
+  .cube:hover {
+    animation: rotateCube 20s 1 alternate ease-in-out;
+  }
+  
+  /* Keyframes for cube rotation, show each face */
+    @keyframes rotateCube {
+        0%   { transform: rotateX(0deg) rotateY(0deg); }
+        16.6% { transform: rotateX(90deg) rotateY(90deg); }
+        33.2% { transform: rotateX(0deg) rotateY(180deg); }
+        49.8% { transform: rotateX(0deg) rotateY(270deg); }
+        66.4% { transform: rotateX(90deg) rotateY(0deg); }
+        83% { transform: rotateX(-90deg) rotateY(0deg); }
+        100% { transform: rotateX(0deg) rotateY(0deg); }
+    }
+  
