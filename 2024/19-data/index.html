@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
   <meta name="author" content="Hamid Yuksel" />
-  <meta name="description" content="Visitors are always welcome for a spell. Weird Web October 2024." />
-  <link rel="preload" as="fetch" href="https://octothorp.es/?uri=https://wwo-yooksel.vercel.app/2024/16-social/index.html" >
+  <meta name="description" content="Did you forget to feed someone? Weird Web October 2024." />
+  <link rel="preload" as="fetch" href="https://octothorp.es/?uri=https://wwo-yooksel.vercel.app/2024/19-data/index.html" >
   <link rel="octo:octothorpes" href="weirdweboctober" >
-  <link rel="octo:octothorpes" href="Social" >
+  <link rel="octo:octothorpes" href="Data" >
   <link rel="stylesheet" type="text/css" href="style.css">
-  <title>Social Town</title>
+  <title>Cat Data</title>
 </head>
 <body>
   <header>
@@ -15,29 +15,29 @@
     <a href="https://weirdweboctober.website/">W.W.O.</a>
   </header>
   <main>
-    <h1 id="title">Data Cat</h1>
+    <div id="avatar"></div>
+    <h1 id="title">Take care of me!</h1>
     <div class="dashboard">
       <div class="data-row">
-        <p>Meows:</p>
-        <p class="data-bar" id="data-meows">|</p>
+        <button class="reset" onclick="handleReset('data-food')">🍗</button>
+        <p class="data-bar" id="data-food">|</p>
       </div>
       <div class="data-row">
-        <p>Purrs:</p>
-        <p class="data-bar" id="data-purrs">|</p>
+        <button class="reset" onclick="handleReset('data-water')">💧</button>
+        <p class="data-bar" id="data-water">|</p>
       </div>
       <div class="data-row">
-        <p>Trills:</p>
-        <p class="data-bar" id="data-trills">|</p>
+        <button class="reset" onclick="handleReset('data-play')">🧵</button>
+        <p class="data-bar" id="data-play">|</p>
       </div>
       <div class="data-row">
-        <p>Chirps:</p>
-        <p class="data-bar" id="data-chirps">|</p>
+        <button class="reset" onclick="handleReset('data-sleep')">💤</button>
+        <p class="data-bar" id="data-sleep">|</p>
       </div>
       <div class="data-row">
-        <p>Hisses:</p>
-        <p class="data-bar" id="data-hisses">|</p>
+        <button class="reset" onclick="handleReset('data-poop')">💩</button>
+        <p class="data-bar" id="data-poop">|</p>
       </div>
-      <button id="reset" onclick="handleReset()">Reset</button>
     </div>
   </main>
   <script src="main.js"></script>

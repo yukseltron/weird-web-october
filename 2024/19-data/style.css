@@ -41,9 +41,6 @@ h1, h2 {
     color: black;
 }
 h1 {
-    font-size: 4rem;
-}
-h2 {
     font-size: 2rem;
 }
 
@@ -65,23 +62,37 @@ p {
 .data-bar {
     font-size: 2rem;
 }
+.data-row-details {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
 
-#reset {
-    width: fit-content;
-    margin: 0 auto;
-    padding: 5px;
-    border: 1px solid black;
-    border-radius: 5px;
+button {
+    border: none;
+    background-color: transparent;
+    height: 25px;
+    width: 25px;
     cursor: pointer;
-    background-color: beige;
     font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
 }
-#reset:hover {
-    background-color: black;
-    color: beige;
+button:hover {
+    outline: 2px solid black;
 }
-#reset:active {
+button:active {
     transform: scale(0.95);
+}
+
+#avatar {
+    width: 100px;
+    height: 100px;
+    background-image: url('https://i.pinimg.com/736x/e3/3f/07/e33f0746ebaf5f6bb5ff78c4f060028c.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 
