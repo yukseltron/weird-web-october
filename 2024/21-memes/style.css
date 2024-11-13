@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    user-select: none;
+    font-family: sans-serif;
+    background-color: rgb(255, 225, 0);
+}
+
+main {
+    margin: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+    width: 50%;
+}
+
+p {
+    font-size: 0.25rem;
+}
+
+span {
+    transition: all 0.3s;
+}
