@@ -10,7 +10,8 @@ body {
     flex-direction: column;
     user-select: none;
     font-family: sans-serif;
-    background-color: rgb(255, 225, 0);
+    background-color: blue;
+    color: white;
 }
 
 main {
@@ -21,18 +22,25 @@ main {
     flex-direction: column;
     gap: 25px;
     width: 50%;
+    height: 90vh;
 }
 
 p {
     font-size: 0.25rem;
 }
 
+h1 {
+    font-weight: 200;
+    font-style: italic;
+    mix-blend-mode: difference;
+}
+
 span {
-    transition: all 0.3s;
+    transition: all 0.5s;
 }
 
 header a {
-    color: black;
+    color: white;
     text-decoration: none;
 }
 header a:hover {
