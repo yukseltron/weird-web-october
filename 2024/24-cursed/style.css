@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: sans-serif;
+    background-color: rgb(28, 2, 2);
+    color: white;
+}
+
+main {
+    margin: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+    height: 90vh;
+}
+
+p {
+    font-size: 0.25rem;
+}
+
+h1 {
+    font-weight: 200;
+    font-style: italic;
+    mix-blend-mode: difference;
+    font-size: 1rem;
+    text-align: center;
+}
+
+span {
+    transition: all 0.5s;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+header a:hover {
+    text-decoration: underline;
+}
+
+.curse {
+    transition: all 0.5s;
+}
+
+.image-container {
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    background-position: center;
+    background-size: cover;
+}
