@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    --primary: rgb(186, 255, 254);
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: sans-serif;
+    background-color: var(--primary);
+    color: blue;
+}
+
+main {
+    margin: 2vh;
+    height: 90vh;
+}
+
+p {
+    font-size: 0.25rem;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 1.25rem;
+    font-family: monospace;
+}
+
+span {
+    transition: all 0.5s;
+}
+
+header a {
+    color: blue;
+    text-decoration: none;
+}
+header a:hover {
+    text-decoration: underline;
+}
+
+summary {
+    cursor: pointer;
+    width: 500px;
+}
+summary:hover {
+    background-color: var(--primary);
+    color: blue;
+    font-style: italic;
+}
+details {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-right: -1px;
+    margin-left: -1px;
+    margin-bottom: -1px;
+    font-size: 1.5rem;
+    border: 1px solid transparent;
+    width: 100%;
+    
+}
+
+details > summary {
+    list-style: none;
+}
+
+.even {
+    background-color: blue;
+    color: white;
+    transition: all 0.5s;
+    border: 1px solid blue;
+}
+.odd {
+    background-color: white;
+    color: blue;
+    border: 1px solid blue;
+    transition: all 0.5s;
+}
+
+.chat {
+    margin-bottom: 50px;
+    border: 1px solid blue;
+}
