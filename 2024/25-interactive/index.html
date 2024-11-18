@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="author" content="Hamid Yuksel" />
+        <meta name="description" content="Just face it head on. Weird Web October 2024." />
+        <link rel="preload" as="fetch" href="https://octothorp.es/?uri=https://wwo-yooksel.vercel.app/2024/25-interactive/index.html" >
+        <link rel="octo:octothorpes" href="weirdweboctober" >
+        <link rel="octo:octothorpes" href="Interactive" >
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Interactive Visage</title>
+      </head>
+<body>
+  <header>
+    <a href="../index.html">2024</a>
+    <a href="https://weirdweboctober.website/">W.W.O.</a>
+  </header>
+    <main class="container">
+      <div class="eyes">
+        <button id="left-eye" class="button" onclick="handleClickLeftEye()">👁️</button>
+        <button id="right-eye" class="button" onclick="handleClickRightEye()">👁️</button>
+      </div>
+      <div class="nose">
+        <button id="nose" class="button" onclick="handleClickNose()">👃</button>
+      </div>
+      <div class="mouth">
+        <button id="mouth" class="button" onclick="handleClickMouth()">👄</button>
+      </div>
+      <button 
+        onclick="randomizeFace()" 
+        style="
+          font-size: 1rem;
+          width: 100px;
+          height: 50px;
+          margin-top: 100px;
+        "
+      >randomize</button>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
