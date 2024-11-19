@@ -57,17 +57,23 @@ hr {
 .countries {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 1rem;
     width: 500px;
     text-transform: uppercase;
-    font-size: 0.75rem;
-    font-style: italic;
+    font-size: 1rem;
+    font-style: italic; 
+    margin-bottom: 50px;
 }
 
-details {
+section {
+    margin-bottom: 50px;
+}
+
+summary {
     cursor: pointer;
     font-size: 1rem;
 }
+
 
 table {
     width: 500px;
@@ -109,7 +115,39 @@ img:hover {
     filter: invert(1);
 }
 
+.award {
+    text-align: center;
+    font-size: 1rem;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid lime;
+}
+
+a {
+    color: lime;
+}
+a:hover {
+    text-decoration: overline;
+}
+
 .qualified {
     background-color: lime;
     color: black;
+}
+
+.flags-banner {
+    width: 100vw;
+    height: 20px;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+    overflow: hidden;
+    z-index: 5;
 }
