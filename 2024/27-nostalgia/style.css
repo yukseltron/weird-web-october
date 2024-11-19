@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    --primary: rgb(0, 75, 14);
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: monospace;
+    background-color: var(--primary);
+    color: lime;
+}
+
+main {
+    margin: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 200px;
+}
+
+header a {
+    color: lime;
+    text-decoration: none;
+}
+header a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    font-weight: 200;
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+hr {
+    border: 1px solid lime;
+}
+
+#crowd {
+    width: 500px;
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("./assets/crowd.png");
+    border: 1px solid lime;
+}
+#crowd:hover {
+    filter: invert(1);
+}
+
+.countries {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 500px;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-style: italic;
+}
+
+details {
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+table {
+    width: 500px;
+    font-size: 1rem;
+    text-align: right;
+}
+
+table td:first-child {
+    text-align: left;
+}
+table th:first-child {
+    text-align: left;
+}
+
+h3 {
+    font-weight: 200;
+    margin: 10px 0px;
+}
+
+h4 {
+    margin: 10px 0px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.game {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+img {
+    width: 100%;
+    border: 1px solid lime;
+}
+img:hover {
+    filter: invert(1);
+}
+
+.qualified {
+    background-color: lime;
+    color: black;
+}

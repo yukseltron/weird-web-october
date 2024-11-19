@@ -57,6 +57,37 @@ const story3 = {
     }
 }
 
+const story4 = {
+    text: "I need your help",
+    reply: {
+        text: "With what?",
+        reply: {
+            text: "Same thing, different day. I need to get out of here.",
+            reply: {
+                text: "I can't help",
+                reply: {
+                    text: "Why not?",
+                    reply: {
+                        text: "I just can't",
+                        reply: {
+                            text: "Yes you can. You owe me. You owe me this much.",
+                            reply: {
+                                text: "You can't keep using that against me",
+                                reply: {
+                                    text: "You know it's true. You know why. I can't make you do anything, but if you're the person I think you are, you'll show up.",
+                                    reply: {
+                                        text: "You better be there on time",
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }           
+        }
+    }
+}
+
 let toggle = false;
 
 function displayStory(story, parentElement = document.body) {
@@ -82,6 +113,8 @@ function displayStory(story, parentElement = document.body) {
 const chat1 = document.querySelector('.chat-1');
 const chat2 = document.querySelector('.chat-2');
 const chat3 = document.querySelector('.chat-3');
+const chat4 = document.querySelector('.chat-4');
 displayStory(story, chat1);
 displayStory(story2, chat2);
 displayStory(story3, chat3);
+displayStory(story4, chat4);
