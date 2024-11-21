@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     --primary: rgb(210, 210, 210);
+    --secondary: orangered;
 }
 
 body {
@@ -24,7 +25,7 @@ main {
 }
 
 header a {
-    color: orangered;
+    color: var(--secondary);
     text-decoration: none;
 }
 header a:hover {
@@ -32,5 +33,5 @@ header a:hover {
 }
 
 p {
-    color: orangered;
+    color: var(--secondary);
 }
