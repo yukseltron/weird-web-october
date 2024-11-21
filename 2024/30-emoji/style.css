@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --primary: rgb(255, 181, 44);
+    --secondary: rgb(115, 0, 255);
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: sans-serif;
+    background-color: var(--primary);
+}
+
+main {
+    height: 90vh;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    color: var(--secondary);
+    user-select: none;
+}
+
+h1 {
+    font-weight: 200;
+    font-size: 10rem;
+}
+
+header a {
+    color: var(--secondary);
+    text-decoration: none;
+}
+header a:hover {
+    text-decoration: underline;
+}
+
+.emoji {
+    position: absolute;
+    will-change: transform, top, left;
+    user-select: none;
+}
+
+.emoji-1 {
+    animation: fall 5s linear infinite, drift-right 2s linear infinite, spin 2s linear infinite;
+}
+.emoji-2 {
+    animation: fall 5s linear infinite, drift-left 2s linear infinite, spin-reverse 2s linear infinite;
+}
+.emoji-3 {
+    animation: fall 5s linear infinite, drift-left 2s linear infinite, spin 2s linear infinite;
+}
+.emoji-4 {
+    animation: fall 5s linear infinite, drift-right 2s linear infinite, spin-reverse 2s linear infinite;
+}
+
+@keyframes fall {
+    from {
+        top: -10%;
+    }
+    to {
+        top: 110%;
+    }
+}
+
+@keyframes drift-right {
+    from {
+        transform: translateX(-2vw);
+    }
+    to {
+        transform: translateX(2vw);
+    }
+}
+
+@keyframes drift-left {
+    from {
+        transform: translateX(2vw);
+    }
+    to {
+        transform: translateX(-2vw);
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin-reverse {
+    from {
+        transform: rotate(360deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
