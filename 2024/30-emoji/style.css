@@ -44,6 +44,7 @@ header a:hover {
     position: absolute;
     will-change: transform, top, left;
     user-select: none;
+    transition: all 0.5s ease;
 }
 
 .emoji-1 {
