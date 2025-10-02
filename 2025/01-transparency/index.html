@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="author" content="Hamid Yuksel" />
+  <meta name="description" content="Things were never so clear. Weird Web October 2025." />
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>The Transparent Man</title>
+</head>
+<body>
+  <header>
+    <a href="../index.html">2025</a>
+    <a href="https://weirdweboctober.website/">W.W.O.</a>
+  </header>
+
+  <main id="container">
+    <h1>The Transparent Man</h1>
+    <img id="cover" src="cover.png" alt="Cover image of a shadowy figure" width="100%" style="background-color: red;"/>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus
+      urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis
+      porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac
+      euismod semper, magna diam.
+    </p>
+    <p>
+      Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci,
+      sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar
+      facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor
+      neque egestas augue.
+    </p>
+  </main>
+
+  <div id="overlay">
+    <svg id="overlaySvg" style="position:fixed; inset:0; width:100%; height:100%; pointer-events:none;">
+      <defs>
+        <mask id="pageMask" maskUnits="userSpaceOnUse">
+          <rect id="maskBg" x="0" y="0" width="0" height="0" fill="white"></rect>
+          <rect id="holeRect" x="-9999" y="-9999" width="400" height="400" fill="black"></rect>
+        </mask>
+      </defs>
+      <rect id="overlayRect" x="0" y="0" width="100%" height="100%" fill="black" mask="url(#pageMask)"></rect>
+    </svg>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

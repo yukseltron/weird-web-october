@@ -4,6 +4,24 @@
     box-sizing: border-box;
 }
 
+@media(prefers-color-scheme: dark) {
+    body {
+        color: white;
+        background-color: black;
+    }
+
+    a {
+        color: orangered;
+    }
+}
+
+@mmedia(prefers-color-scheme: light) {
+    body {
+        color: black;
+        background-color: white;
+    }
+}
+
 body {
     font-family: sans-serif;
     display: flex;
@@ -16,7 +34,9 @@ body {
 main {
     width: 50%;
     margin: 0 auto;
-    font-size : 2rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
 }
 
 h1 {
@@ -35,25 +55,12 @@ a:hover {
     text-decoration: underline;
 }
 
+main a {
+    margin: 10px 0px;
+    width: fit-content;
+}
+
 #title {
     background-size: contain;
     background-repeat: no-repeat;
-}
-
-@media(prefers-color-scheme: dark) {
-    body {
-        color: white;
-        background-color: black;
-    }
-
-    a {
-        color: white;
-    }
-}
-
-@mmedia(prefers-color-scheme: light) {
-    body {
-        color: black;
-        background-color: white;
-    }
 }
