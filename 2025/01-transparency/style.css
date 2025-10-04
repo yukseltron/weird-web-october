@@ -79,13 +79,14 @@ button:hover {
 
 #secret-text {
     position: fixed;
-    top: 0;
+    top: 5%;
     left: 0;
     width: 100%;
     font-weight: bold;
     text-align: center;
     pointer-events: none;
-    visibility: hidden;
+    display: none;
+    color: white;
 }
 #secret-text p {
     font-size: 5vh;

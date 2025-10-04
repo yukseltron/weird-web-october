@@ -43,18 +43,19 @@ document.addEventListener('touchmove', (e) => {
 function displayAll() {
   isDisplayAll = !isDisplayAll;
   const secretText = document.getElementById('secret-text');
+  const main = document.querySelector('main')
 
   if (isDisplayAll) {
     // Hide overlay + invert page
+    body.style.backgroundColor = "black";
     overlay.style.display = "none";
-    body.style.filter = "invert(1)";
-    secretText.style.visibility = 'visible';
-    secretText.style.color = 'white';
-    secretText.style.position = 'fixed';
-    secretText.style.top = '0';
+    main.style.filter = "invert(1)";
+    body.style.color = "white";
+    secretText.style.filter = "invert(0)";
+    secretText.style.display = "inline-block";
   } else {
     // Restore overlay + normal colors
     overlay.style.display = "block";
-    body.style.filter = "none";
+    main.style.filter = "none";
   }
 }
