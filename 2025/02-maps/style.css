@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: crosshair;
+}
+
+:root {
+    background-color: white;
+    color: blue;
+}
+
+body {
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    user-select: none;
+}
+
+main {
+    width: 90%;
+    height: 100vh;
+    margin: 0 auto;
+    font-size : 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 2rem;
+    text-align: left;
+}
+
+.map {
+    width: 66vw;
+    height: 80vh;
+    border: 2px solid blue;
+    background-image: url('map.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.landmark { 
+    width: 25px;
+    height: 25px;
+    background-color: blue;
+    border-radius: 100%;
+    position: absolute;
+    border: 2px solid blue;
+}
+.landmark:hover {
+    cursor: pointer;
+    background-color: white;
+}
