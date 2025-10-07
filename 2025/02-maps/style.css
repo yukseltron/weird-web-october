@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    cursor: crosshair;
 }
 
 :root {
@@ -36,6 +35,10 @@ h1 {
     text-align: left;
 }
 
+h2 {
+    font-weight: 400;
+}
+
 .map {
     width: 66vw;
     height: 80vh;
@@ -57,4 +60,7 @@ h1 {
 .landmark:hover {
     cursor: pointer;
     background-color: white;
+}
+.landmark-content p {
+    font-style: italic;
 }
