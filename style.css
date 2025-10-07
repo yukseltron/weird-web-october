@@ -28,6 +28,12 @@ h1 {
     padding: 50px;
 }
 
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
 a {
     text-decoration: overline;
 }
