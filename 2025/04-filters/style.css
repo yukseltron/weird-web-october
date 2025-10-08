@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    user-select: none;
+    font-family: 'Roboto Mono', monospace;
+}
+
+main {
+    width: 700px;
+    height: 100vh;
+    margin: 0 auto;
+    margin-top: 100px;
+    font-size : 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 200;
+    margin-bottom: 700px;
+    mix-blend-mode: difference;
+    background-color: black;
+    color: white;
+}
+
+header {
+    z-index: 999;
+}
+
+a { 
+    color: black;
+}
+
+p {
+    margin: 0 auto;
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  position: sticky;
+  top: 25px;
+}
+
+button {
+  font-size: 1rem;
+  padding: 0.6rem 1.2rem;
+  border: 2px solid black;
+  background: transparent;
+  border-radius: 9999px;
+  transition: transform 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+.layer {
+  transition: color 0.6s ease;
+}
+
+#circle-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background-color: transparent;
+  z-index: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}
+
+.img-container {
+    margin: 0 auto;
+    height: 400px;
+    position: fixed;
+    top: 25px;
+    width: 100%;
+    z-index: -1;
+}
+
+img {
+    width: 100%;
+}
+
+.filter-btn {
+    width: 100px;
+}
+.filter-btn:hover {
+    cursor: pointer;
+}
+
+#filter-btn-white {
+    background-color: white;
+}
+#filter-btn-orange {
+    background-color: orangered;
+}
+#filter-btn-violet {
+    background-color: violet;
+}
+#filter-btn-green {
+    background-color: lime;
+}
+
