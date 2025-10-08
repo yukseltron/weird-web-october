@@ -2,9 +2,14 @@ document.addEventListener("DOMContentLoaded", () => {
   const buttons = document.querySelectorAll(".filter-btn");
   const overlay = document.getElementById("circle-overlay");
   const textLayers = document.querySelectorAll(".layer");
+  const image = document.querySelector('img');
+  let toggle = false;
 
   buttons.forEach(button => {
     button.addEventListener("click", (e) => {
+      toggle = !toggle;
+      image.src = toggle ? 'headset-dead.svg' : 'headset-alive.svg';
+      image.style.filter = 'invert(0.5) sepia(1) saturate(5) hue-rotate(175deg)'
       const color = e.target.dataset.color;
       const rect = e.target.getBoundingClientRect();
       const x = rect.left + rect.width / 2;
