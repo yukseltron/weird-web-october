@@ -8,9 +8,10 @@ document.addEventListener("DOMContentLoaded", () => {
   buttons.forEach(button => {
     button.addEventListener("click", (e) => {
       toggle = !toggle;
-      image.src = toggle ? 'headset-dead.svg' : 'headset-alive.svg';
-      image.style.filter = 'invert(0.5) sepia(1) saturate(5) hue-rotate(175deg)'
       const color = e.target.dataset.color;
+      if (color === 'lime') {
+        image.src = 'headset-dead.svg';
+      }
       const rect = e.target.getBoundingClientRect();
       const x = rect.left + rect.width / 2;
       const y = rect.top + rect.height / 2;
@@ -28,7 +29,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // Expand circle animation
       overlay.style.transition = "width 1s ease-out, height 1s ease-out";
-      overlay.style.width = `300vmax`;
       overlay.style.height = `300vmax`;
 
       // Change text dynamically
@@ -47,10 +47,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function getContrastingColor(bgColor) {
     switch (bgColor) {
-      case "white": return "black";
+      case "white": return "lime";
       case "orangered": return "yellow";
       case "violet": return "cyan";
-      case "lime": return "white";
+      case "lime": return "orangered";
       default: return "black";
     }
   }
