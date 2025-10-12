@@ -10,6 +10,7 @@ body {
     justify-content: center;
     flex-direction: column;
     font-family: 'Roboto Mono', monospace;
+    transition: all 0.6s ease;
 }
 
 main {
@@ -102,6 +103,7 @@ img {
     width: 100vw;
 }
 
+
 .filter-btn {
     width: 100px;
 }
@@ -115,8 +117,8 @@ img {
 #filter-btn-orange {
     background-color: orangered;
 }
-#filter-btn-violet {
-    background-color: violet;
+#filter-btn-black {
+    background-color: black;
 }
 #filter-btn-green {
     background-color: lime;

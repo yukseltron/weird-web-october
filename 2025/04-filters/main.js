@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const overlay = document.getElementById("circle-overlay");
   const textLayers = document.querySelectorAll(".layer");
   const image = document.querySelector('img');
+  const body = document.body;
   let toggle = false;
 
   buttons.forEach(button => {
@@ -11,6 +12,11 @@ document.addEventListener("DOMContentLoaded", () => {
       const color = e.target.dataset.color;
       if (color === 'lime') {
         image.src = 'headset-dead.svg';
+      }
+      if (color === 'black') {
+        body.style.color = "white";
+      } else {
+        body.style.color = "black";
       }
       const rect = e.target.getBoundingClientRect();
       const x = rect.left + rect.width / 2;
@@ -49,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
     switch (bgColor) {
       case "white": return "lime";
       case "orangered": return "yellow";
-      case "violet": return "cyan";
+      case "black": return "cyan";
       case "lime": return "orangered";
       default: return "black";
     }
