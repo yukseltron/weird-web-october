@@ -1,0 +1,108 @@
+body {
+    background: darkgrey;
+    font-family: 'Helvetica Neue', sans-serif;
+    margin: 0;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a {
+    color: yellow;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+main {
+    position: relative;
+    flex: 1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+svg {
+    position: absolute;
+    width: 80vmin;
+    height: 80vmin;
+    overflow: visible;
+}
+
+text {
+    fill: yellow;
+    letter-spacing: 0.1em;
+    text-anchor: middle;
+}
+
+.title text {
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    animation: rotateInPlace 30s linear infinite;
+    transform-origin: 50% 50%;
+}
+
+.paragraph text {
+    font-size: 0.9rem;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    transform-origin: 50% 50%;
+    animation: rotateInPlaceReverse 50s linear infinite;
+}
+
+.paragraph text.active {
+    opacity: 1;
+}
+
+@keyframes rotateInPlace {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes rotateInPlaceReverse {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(-360deg); }
+}
+
+/* Eyelids for blink effect */
+.eyelid {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: black;
+    z-index: 999;
+    transition: transform 0.4s ease-in-out;
+}
+
+.eyelid.top {
+    top: 0;
+    transform: translateY(-100%);
+}
+
+.eyelid.bottom {
+    bottom: 0;
+    transform: translateY(100%);
+}
+
+.eyelid.close {
+    transform: translateY(0);
+}
+
+/*smaller screen body widths */
+@media (max-width: 900px) {
+    main {
+        width: 90vw;
+    }
+    .popover-content {
+        max-width: 80vw;
+    }
+}
