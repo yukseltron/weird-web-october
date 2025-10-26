@@ -2,7 +2,10 @@
 <html>
 <head>
   <meta name="author" content="Hamid Yuksel" />
-  <meta name="description" content="Oh snap. Weird Web October 2025." />
+  <meta name="description" content="It's hidden in the photographs. Weird Web October 2025." />
+  <link rel="preload" as="fetch" href="https://octothorp.es/?uri=https://wwo-yooksel.vercel.app/2025/11-camera/index.html">
+  <link rel="octo:octothorpes" href="weirdweboctober">
+  <link rel="octo:octothorpes" href="Camera">
   <link rel="stylesheet" type="text/css" href="style.css">
   <title>The Shots</title>
 </head>
@@ -13,28 +16,19 @@
   </header>
 
   <main>
-    <div class="censor-wrapper">
-      <video
-        id="video"
-        class="censor-video"
-        autoplay
-        muted
-        playsinline
-        preload="metadata"
-        width="960"
-        x-webkit-airplay="deny"
-        controlsList="nodownload noplaybackrate noremoteplayback"
-      ></video>
+    <div class="scene-content">
+      <p class="hidden-text">
+        We captured it again at great cost. The violence was nearly unending but we found a way through. The lives it took will never come back, but we must make sure to keep this hidden and locked away forever. Don't let it get out again. Don't let it see itself again.
+        There is no one left who can do what we just did. The old ways have failed us and we have to fend for ourselves. You can take a peak, but never take a full look. It will take your vision away and replace it with its madness. There is no cure, there is no solution.
+        Prevention is key and now our only tool against it. When it sleeps, it won't be able to resist and we will find it inebriated in its power. That'll be enough until we figure something out, eventually. I just hope we survive until then.
+      </p>
     </div>
-    <p>WHAT DOES THE CAMERA NOT SEE?</p>
+
+    <div id="camera-viewfinder"></div>
+    <div id="gallery"></div>
   </main>
 
-  <script>
-    const video = document.getElementById('video');
-    // Add the source dynamically
-    video.src = 'show.mov';
 
-    
-  </script>
+  <script src="main.js"></script>
 </body>
 </html>
