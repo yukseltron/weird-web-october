@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="author" content="Hamid Yuksel" />
+  <meta name="description" content="Oh snap. Weird Web October 2025." />
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>The Shots</title>
+</head>
+<body>
+  <header>
+    <a href="../index.html">2025</a>
+    <a href="https://weirdweboctober.website/">W.W.O.</a>
+  </header>
+
+  <main>
+    <div class="censor-wrapper">
+      <video
+        id="video"
+        class="censor-video"
+        autoplay
+        muted
+        playsinline
+        preload="metadata"
+        width="960"
+        x-webkit-airplay="deny"
+        controlsList="nodownload noplaybackrate noremoteplayback"
+      ></video>
+    </div>
+    <p>WHAT DOES THE CAMERA NOT SEE?</p>
+  </main>
+
+  <script>
+    const video = document.getElementById('video');
+    // Add the source dynamically
+    video.src = 'show.mov';
+
+    
+  </script>
+</body>
+</html>
