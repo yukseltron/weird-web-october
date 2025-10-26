@@ -46,11 +46,6 @@ main {
     main {
         font-size: 1.2em;
     }
-    
-    #camera-viewfinder {
-        width: 200px;
-        height: 150px;
-    }
 }
 
 #grid {
