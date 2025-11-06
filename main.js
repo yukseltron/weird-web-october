@@ -9,6 +9,7 @@ async function setBackgroundImage() {
     const title = document.getElementById("title");
     const imageUrl = await getCatPicture();
     title.style.backgroundImage = `url(${imageUrl})`;
+    title.style.backgroundPosition = 'center';
 }
 
 setBackgroundImage();

@@ -31,7 +31,9 @@ h1 {
 footer {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    align-items: flex-end;
+    width: 50%;
+    gap: 15px;
 }
 
 a {
@@ -44,6 +46,7 @@ a:hover {
 #title {
     background-size: contain;
     background-repeat: no-repeat;
+    height: 400px;
 }
 
 @media(prefers-color-scheme: dark) {
