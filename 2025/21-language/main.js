@@ -49,7 +49,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Encrypt paragraph words
   const paragraph = document.getElementById('encrypted-text');
   if (paragraph) {
     const words = paragraph.textContent.trim().split(' ');
