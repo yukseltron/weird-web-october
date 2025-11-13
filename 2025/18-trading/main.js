@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function endGame() {
     imgContainer.innerHTML = '';
     buttonContainer.innerHTML = '';
-    hud.innerHTML = `<strong>Receipt:</strong><br><br>${finalTrades.join('<br>')}<br/><strong>Thank you! Come again!</strong>`;
+    hud.innerHTML = `<strong>Receipt:</strong><br><br>${finalTrades.join('<br>')}<br/><strong>Thank you?</strong>`;
   }
 
   renderRound();
