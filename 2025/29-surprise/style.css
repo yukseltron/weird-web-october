@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    font-family: 'sans-serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    user-select: none;
+    background-color: black;
+}
+header {
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    font-weight: 400;
+    color: white;
+    margin: 0;
+    line-height: 4rem;
+    font-size: 4rem;
+    letter-spacing: 4rem;
+    text-transform: uppercase;
+    font-style: italic;
+    text-align: center;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+}
+
+p {
+    line-height: 2rem;
+    color: white;
+}
+
+b {
+    font-weight: 500;
+}
+
+main {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5em;
+    min-height: 60vh;
+    box-sizing: border-box;
+    width: 50vw;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 500px;
+    user-select: none;
+}
+
+@media (max-width: 900px) {
+    main {
+        font-size: 1.2em;
+    }
+}
+
+.person {
+    width: 50px;
+    height: 100px;
+    background-color: black;
+    position: absolute;
+    border-radius: 40px;
+    transition: all 1s;
+}
+#joja {
+    top: 40%;
+    left: 50%;
+    background-color: orange;  
+}
+#joje {
+    top: 68%;
+    left: 35%;
+    background-color: lime;  
+}
+#joji {
+    top: 60%;
+    left: 30%;
+    background-color: red;  
+}
+#jojo {
+    top: 50%;
+    left: 60%;
+    background-color: cyan;
+}
+#joju {
+    top: 70%;
+    left: 55%;
+    background-color: violet;
+}
+#jojy {
+    top: 65%;
+    left: 65%;
+    background-color: yellow;
+}
+
+button {
+    width: 360px;
+    height: 360px;
+    border: 0;
+    background-color: white;
+}
+#button-left:hover {
+    background-color: red;
+    cursor: pointer;
+}
+#button-right:hover {
+    background-color: blue;
+    cursor: pointer;
+}
+
+#left-result { 
+    color: red;
+    visibility: hidden;
+}
+#right-result { 
+    color: blue;
+    visibility: hidden;
+    text-align: right;
+}
